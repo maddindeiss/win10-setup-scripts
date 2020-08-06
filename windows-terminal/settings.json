@@ -1,0 +1,130 @@
+
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+
+    "disabledProfileSources": ["Windows.Terminal.Azure"],
+
+    "profiles":
+    {
+        "defaults": {
+            "colorScheme": "Dracula",
+            "useAcrylic": true,
+            "acrylicOpacity": 0.9,
+            "fontFace": "Cascadia Code PL"
+        }, 
+        "list": [
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44ba}",
+                "name": "PowerShell 7",
+                "commandline": "pwsh.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "cmd",
+                "commandline": "cmd.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+                "hidden": false,
+                "name": "Ubuntu-18.04",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "name": "Ubuntu-20.04",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": true,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            }
+        ]
+    },
+
+    // Add custom color schemes to this array
+    "schemes": [
+        {
+            "name": "OceanicMaterial",
+            "black": "#000000",
+            "red": "#ee2b2a",
+            "green": "#40a33f",
+            "yellow": "#ffea2e",
+            "blue": "#1e80f0",
+            "purple": "#8800a0",
+            "cyan": "#16afca",
+            "white": "#a4a4a4",
+            "brightBlack": "#777777",
+            "brightRed": "#dc5c60",
+            "brightGreen": "#70be71",
+            "brightYellow": "#fff163",
+            "brightBlue": "#54a4f3",
+            "brightPurple": "#aa4dbc",
+            "brightCyan": "#42c7da",
+            "brightWhite": "#ffffff",
+            "background": "#1c262b",
+            "foreground": "#c2c8d7"
+          },
+          {
+            "name": "Moonlight II",
+            "black": "#191a2a",
+            "red": "#ff757f",
+            "green": "#c3e88d",
+            "yellow": "#ffc777",
+            "blue": "#82aaff",
+            "purple": "#c099ff",
+            "cyan": "#86e1fc",
+            "white": "#c8d3f5",
+            "brightBlack": "#828bb8",
+            "brightRed": "#ff757f",
+            "brightGreen": "#c3e88d",
+            "brightYellow": "#ffc777",
+            "brightBlue": "#82aaff",
+            "brightPurple": "#c099ff",
+            "brightCyan": "#86e1fc",
+            "brightWhite": "#c8d3f5",
+            "background": "#222436",
+            "foreground": "#c8d3f5"
+          },
+          {
+            "name": "Dracula",
+            "black": "#000000",
+            "red": "#ff5555",
+            "green": "#50fa7b",
+            "yellow": "#f1fa8c",
+            "blue": "#bd93f9",
+            "purple": "#ff79c6",
+            "cyan": "#8be9fd",
+            "white": "#bbbbbb",
+            "brightBlack": "#555555",
+            "brightRed": "#ff5555",
+            "brightGreen": "#50fa7b",
+            "brightYellow": "#f1fa8c",
+            "brightBlue": "#bd93f9",
+            "brightPurple": "#ff79c6",
+            "brightCyan": "#8be9fd",
+            "brightWhite": "#ffffff",
+            "background": "#1e1f29",
+            "foreground": "#f8f8f2"
+          }
+    ],
+
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": []
+}
