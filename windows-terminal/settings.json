@@ -45,7 +45,7 @@
             "experimental.retroTerminalEffect": false,
             "font": 
             {
-                "face": "Cascadia Code PL"
+                "face": "CaskaydiaCove NF"
             },
             "useAcrylic": true
         },
@@ -53,6 +53,7 @@
         [
             {
                 "commandline": "pwsh.exe",
+                "fontFace": "CaskaydiaCove NF",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44ba}",
                 "hidden": false,
                 "name": "PowerShell 7"
@@ -76,10 +77,10 @@
                 "source": "Windows.Terminal.Wsl"
             },
             {
-                "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
-                "hidden": false,
-                "name": "Ubuntu-18.04",
-                "source": "Windows.Terminal.Wsl"
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": true,
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore"
             }
         ]
     },
