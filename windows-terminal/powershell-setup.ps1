@@ -18,7 +18,7 @@ else {
 
 if (Get-Module -ListAvailable -Name PowerShellGet) {
     Write-Host "Updating PowerShellGet"
-    Update-Module -Name PowerShellGet -Scope CurrentUser
+    Install-Module -Name PowerShellGet -Scope CurrentUser
 } 
 else {
     Write-Host "Installing PowerShellGet"
@@ -26,7 +26,7 @@ else {
 }
 
 Write-Host "Installing oh-my-posh"
-Install-Module -Name oh-my-posh -Scope CurrentUser -Force
+winget install --exact --silent JanDeDobbeleer.OhMyPosh
 
 
 if (Get-Module -ListAvailable -Name PSReadLine) {
@@ -51,7 +51,7 @@ Install-Module -Name Terminal-Icons -Repository PSGallery -Scope CurrentUser
 #Install Font
 Write-Host "Installing Nerd-Font Caskaydia Cove (Cascadia Code)"
 $name = "CaskaydiaCoveRegularNerdFontCompleteMonoWindowsCompatible.otf"
-curl.exe -fLo $($name) https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/CascadiaCode/Regular/complete/Caskaydia%20Cove%20Regular%20Nerd%20Font%20Complete%20Windows%20Compatible.otf
+curl.exe -fLo $($name) https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/CascadiaCode/Regular/complete/Caskaydia%20Cove%20Nerd%20Font%20Complete%20Windows%20Compatible%20Regular.otf
 
 $Install = $true  # $false to uninstall (or 1 / 0)
 $FontsFolder = (New-Object -ComObject Shell.Application).Namespace(0x14)   # Must use Namespace part or will not install properly
@@ -72,11 +72,11 @@ if ($decision -eq 0) {
     Write-Host "Override Powershell profile"
     New-Item $profilePath -ItemType File -Force
     
+    Add-Content $profilePath "oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/paradox.omp.json' | Invoke-Expression"
+
     Add-Content $profilePath "Import-Module posh-git"
-    Add-Content $profilePath "Import-Module oh-my-posh"
     Add-Content $profilePath "Import-Module PSReadLine"
     Add-Content $profilePath "Import-Module Terminal-Icons"
-    Add-Content $profilePath "Set-PoshPrompt -Theme Paradox"
     
     Add-Content $profilePath "Set-PSReadLineOption -HistorySearchCursorMovesToEnd"
     Add-Content $profilePath "Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward"
