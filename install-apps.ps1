@@ -36,6 +36,7 @@ $apps = @(
     @{name = "Microsoft Teams"; source = "msstore" },
     @{name = "Enpass Password Manager"; source = "msstore" },
     @{name = "AgileBits.1Password" },
+    @{name = "bitwarden"; source = "msstore" },
     @{name = "OpenWhisperSystems.Signal" },
     @{name = "Notion.Notion" },
     @{name = "Toggl Track"; source = "msstore" },
@@ -49,11 +50,12 @@ $apps = @(
     @{name = "Microsoft.PowerShell" },  
     @{name = "Windows Terminal"; source = "msstore" },  
     @{name = "Docker.DockerDesktop" },
-    @{name = "Microsoft.DotNet.SDK.6" },
+    @{name = "Microsoft.DotNet.SDK.7" },
     @{name = "OpenJS.NodeJS" },
     @{name = "Axosoft.GitKraken" },
-    @{name = "Git.Git" }
-    @{name = "JanDeDobbeleer.OhMyPosh" }
+    @{name = "Git.Git" },
+    @{name = "JanDeDobbeleer.OhMyPosh" },
+    @{name = "Synology.DriveClient" }
 );
 
 Foreach ($app in $apps) {
