@@ -43,10 +43,13 @@ $apps = @(
     @{name = "VideoLAN.VLC" },
     @{name = "7zip.7zip" },
     @{name = "Valve.Steam" },
+    @{name = "Ubisoft.Connect" },
+    @{name = "EpicGames.EpicGamesLauncher" },
     @{name = "Telegram.TelegramDesktop" },
     @{name = "Spotify"; source = "msstore" },
     @{name = "Microsoft.VisualStudioCode" },
     @{name = "JetBrains.Toolbox" },
+    @{name = "HeidiSQL.HeidiSQL" },
     @{name = "Microsoft.PowerShell" },  
     @{name = "Windows Terminal"; source = "msstore" },  
     @{name = "Docker.DockerDesktop" },
@@ -55,7 +58,13 @@ $apps = @(
     @{name = "Axosoft.GitKraken" },
     @{name = "Git.Git" },
     @{name = "JanDeDobbeleer.OhMyPosh" },
-    @{name = "Synology.DriveClient" }
+    @{name = "Synology.DriveClient" },
+    @{name = "Canneverbe.CDBurnerXP" },
+    @{name = "SpotiFlyer" },
+    @{name = "Office (Microsoft 365)"; source = "msstore" },
+    @{name = "Adobe Creative Cloud"; source = "msstore" },
+    @{name = "Disney+"; source = "msstore" },
+    @{name = "fre:ac - free audio converter"; source = "msstore" }
 );
 
 Foreach ($app in $apps) {
